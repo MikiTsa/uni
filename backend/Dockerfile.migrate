@@ -1,0 +1,10 @@
+FROM node:lts-alpine
+
+# required for pg_isready
+RUN apk add --no-cache postgresql-client
+
+WORKDIR /migrate
+COPY package.json ./
+COPY migrations ./migrations
+
+RUN npm install

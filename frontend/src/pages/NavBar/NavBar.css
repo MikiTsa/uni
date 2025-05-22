@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 32px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+[data-theme='dark'] .logo {
+  color: #fff;
+}
+
+.logo span {
+  font-style: italic;
+  margin-left: 4px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-link,
+.menu-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icon-link .material-icons,
+.menu-toggle .material-icons {
+  font-size: 32px;
+}
+
+.icon-link:hover,
+.menu-toggle:hover {
+  opacity: 0.7;
+}
+
+.side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.side-menu li {
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0;
+  text-align: center;
+}
+
+
+.side-menu li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.side-menu li a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.menu-item {
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 600;
+  color: #000;
+  transition: background 0.2s;
+}
+
+.menu-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}

@@ -1,0 +1,150 @@
+.register-wrapper {
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  
+  
+  
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    opacity: 0.4;
+    z-index: 0;
+  }
+  
+  .header {
+    position: relative;
+    width: 100%;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .logo span {
+    font-weight: normal;
+    font-style: italic;
+    margin-left: 4px;
+  }
+  
+  .register-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 20px;
+    width: 100%;
+    flex-shrink: 1;
+  }
+  
+  .auth-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  
+  .register-card {
+    background: rgba(204, 204, 204, 0.92);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 520px;
+    min-width: 320px;
+  }
+  
+  .register-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-card input {
+    margin-bottom: 20px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+  }
+  
+  .register-card button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #8a8a8a;
+    border: none;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .register-card button:hover {
+    background-color: #444;
+  }
+  
+  .register-card .forgot {
+    margin-top: 15px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .register-card .forgot:hover {
+    text-decoration: underline;
+  }
+  
+  /* 📱 RESPONSIVE */
+  @media (max-width: 500px) {
+    .auth-title {
+      font-size: 24px;
+    }
+  
+    .register-card {
+      padding: 30px 20px;
+    }
+  
+    .register-card input,
+    .register-card button {
+      font-size: 16px;
+      padding: 14px;
+    }
+  }
+  
+  .register-card {
+    min-width: 360px;
+  }
+
+  
+  @media (max-width: 360px) {
+    .register-card {
+      padding: 30px 10px;
+      min-width: 100%; /* use full screen */
+    }
+  
+    .auth-title {
+      font-size: 20px;
+    }
+  }
+  

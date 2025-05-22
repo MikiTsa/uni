@@ -1,0 +1,22 @@
+.predmeti-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .predmeti-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 12px 0;
+    text-align: center;
+  }
+  .predmeti-list li:last-child {
+    border-bottom: none;
+  }
+  .predmeti-list a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+  }
+  .predmeti-list a:hover {
+    color: #555;
+  }
+  

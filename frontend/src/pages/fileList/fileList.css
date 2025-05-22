@@ -1,0 +1,250 @@
+.filelist-page-container {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    min-height: 100vh;
+    
+}
+
+.file-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.body {
+    padding: 0 3vw;
+    padding-top: 4vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.file-use-title {
+    font-size: 24px;
+    color: var(--primary-text-color);
+    margin: 0;
+}
+
+.add-button {
+    background-color: var(--button-background-color);
+    color: var(--secondary-text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover {
+    background-color: var(--button-hover);
+}
+
+.files-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.file-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 8px;
+    background-color: var(--background-color);
+}
+
+.file-details {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.file-date {
+    color: var(--secondary-text-color);
+}   
+.voting-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.vote-count {
+    order: 1; 
+    margin-right: 8px;
+}
+
+.vote-btn.upvote {
+    order: 2;
+}
+
+.vote-btn.downvote {
+    order: 3;
+}
+
+.vote-count {
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+
+.icon-link {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+.file-title {
+    min-width: 200px;
+    padding-left: 10px;
+}
+
+
+.voting-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.material-icons:hover {
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+.file-title, .file-author, .file-date {
+    font-size: clamp(14px, 1.6vw, 16px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.file-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 2px;
+}
+
+.file-info {
+    flex: 1 1 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--button-background-color);
+    gap: 5px;
+    padding: 3px;
+    min-width: 300px;
+}
+
+.left-group {
+    display: flex;
+    align-items: center;
+    gap: clamp(15px, 5vw, 40px);
+    flex-wrap: wrap;
+}
+
+.download-icon {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.flag-icon {
+    padding: 0 10px;
+    cursor: pointer;
+    color: var( --warning-color);
+}
+.add-button {
+  position: relative;
+  display: inline-block;
+}
+
+.auth-message {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7); /* 70% opaque white background */
+  color: red;
+  padding: 6px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 0;
+  animation: fadePopup 5s ease-in-out forwards;
+}
+
+@keyframes fadePopup {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .file-info {
+        flex-basis: 100%;
+        min-width: auto;
+    }
+    
+    .left-group {
+        gap: 20px;
+    }
+    
+    .file-title, .file-author, .file-date {
+        max-width: 150px;
+        font-size: 14px;
+    }
+    
+    .voting-section {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        padding: 0 5vw;
+        padding-top: 6vw;
+    }
+    
+    .file-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .left-group {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    
+    .file-title, .file-author, .file-date {
+        max-width: 100%;
+        white-space: normal;
+    }
+    
+    .download-icon {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+    
+    .voting-section {
+        justify-content: flex-end;
+    }
+}

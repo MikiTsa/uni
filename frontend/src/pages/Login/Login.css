@@ -1,0 +1,134 @@
+/* Reset layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 🔲 Background */
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    opacity: 0.4;
+    z-index: 0;
+  }
+  
+  /* 🔳 Transparent Header */
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo span {
+    font-weight: normal;
+    font-style: italic;
+    margin-left: 4px;
+  }
+  
+  .login-title {
+    position: absolute;
+    top: calc(50% - 240px); /* Adjusts based on card height */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+  }
+
+.login-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgba(204, 204, 204, 0.92);
+  padding: 70px 60px; /* ⬆️ Increased size */
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 520px; /* ⬅️ Wider card */
+}
+  
+  .login-card h2 {
+    margin-bottom: 30px;
+    font-size: 28px; /* ⬅️ bigger heading */
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .login-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-card input {
+    margin-bottom: 20px;
+    padding: 16px 20px; /* ⬅️ taller input */
+    border-radius: 10px;
+    font-size: 18px; /* ⬅️ larger text */
+    border: white;
+  }
+  
+  .login-card button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .login-card button {
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #8a8a8a;
+    border: #8a8a8a;
+  }
+  
+  .login-card button:hover {
+    background-color: #444;
+  }
+  
+  .login-card .forgot {
+    margin-top: 15px;
+    font-size: 15px;
+    color: black;
+  }
+  
+  /* 🧠 Responsive tweaks */
+  @media (max-width: 500px) {
+    .login-card {
+      padding: 30px 20px;
+    }
+  
+    .login-card h2 {
+      font-size: 20px;
+    }
+  
+    .login-card input,
+    .login-card button {
+      font-size: 14px;
+    }
+  }
+  

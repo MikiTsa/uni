@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 💥 Prevent horizontal scroll globally */
+  height: 100%;
+  width: 100%;
+}
+
+:host {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden; /* 💥 Block horizontal scroll at component level */
+}
+
+:root{
+  font-family: 'Segoe UI', sans-serif;
+
+  --background-color: #FFFFFF;
+  --button-background-color: #D6CFCF;
+  --search-bar-color: #FFFFFF;
+  --primary-text-color: #000000;
+  --secondary-text-color: #474040;
+  --tertiary-text-color: #474040;
+  --button-hover: #bbb;
+  --warning-color: #e33320;
+}
+
+[data-theme="dark"]{
+  --background-color: #000000;
+  --button-background-color: #262222;
+  --search-bar-color: #8D8383;
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #D2C3C3;
+  --tertiary-text-color: #8D8383;
+  --button-hover: #1a1a1a;
+  --warning-color: #e33320;
+}

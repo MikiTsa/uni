@@ -1,0 +1,80 @@
+.subjects-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subjects-grid {
+    display: grid;  
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 2rem;  
+    width: 100%;
+    padding: 0 4vw;    
+      max-width: none;
+    margin: 0 auto 2rem;
+  }
+  
+  
+  .subject-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 500px;
+
+  }
+  
+  .subject-name {
+    margin: 0.25rem 0 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  .subject-column button {
+    width: 100%;
+    padding: 1.2rem 0;
+    background:  var(--button-background-color);
+    color: var(--tertiary-text-color);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .subject-column button:hover {
+    background: var(--button-hover);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 500;
+  }
+  
+  
+  .subjects-grid {
+    gap: 1.5rem;
+    padding: 0 2vw;
+    margin-bottom: 3rem;
+  }
+  
+  .subject-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+  }
+
+  .subject-column a {
+  width: 100%;
+}

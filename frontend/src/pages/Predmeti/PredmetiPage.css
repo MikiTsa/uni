@@ -1,0 +1,156 @@
+.levels-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.predmeti-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    background-color: var( --background-color);
+    color: var(--secondary-text-color);
+}
+  
+.page-separator {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background: #ddd;
+  }
+  
+  .predmeti-page-container {
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .predmeti-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;          
+    margin: 1rem 0;      
+    padding: 0 1rem;   
+  }
+  
+
+  .predmeti-logo {
+    width: 200px;       
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .predmeti-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: none;
+    margin: 0;
+  }
+  
+  .levels-grid {
+    display: grid;  
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 2rem;  
+    width: 100%;
+    padding: 0 4vw;    
+      max-width: none;
+    margin: 0 auto 2rem;
+  }
+  
+  
+  .level-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  
+  .level-stage {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .level-name {
+    margin: 0.25rem 0 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .level-column button {
+    width: 100%;
+    padding: 1.25rem 0;
+    background:  var(--button-background-color);
+    color: var(--tertiary-text-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .level-column button:hover {
+    background: var(--button-hover);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 500;
+  }
+  
+.predmeti-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 1rem;
+  }
+  
+  .predmeti-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .predmeti-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .levels-grid {
+    gap: 1.5rem;
+    padding: 0 2vw;
+    margin-bottom: 3rem;
+  }
+  
+  .predmeti-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .predmeti-logo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

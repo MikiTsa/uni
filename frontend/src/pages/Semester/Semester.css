@@ -1,0 +1,73 @@
+.semesters-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .semesters-grid {
+    display: grid;  
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 2rem;  
+    width: 100%;
+    padding: 0 4vw;    
+      max-width: none;
+    margin: 0 auto 2rem;
+  }
+  
+  
+  .semester-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .semester-name {
+    margin: 0.25rem 0 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .semester-column button {
+    width: 100%;
+    padding: 1.25rem 0;
+    background:  var(--button-background-color);
+    color: var(--tertiary-text-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .semester-column button:hover {
+    background: var(--button-hover);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 500;
+  }
+  
+  
+  .semesters-grid {
+    gap: 1.5rem;
+    padding: 0 2vw;
+    margin-bottom: 3rem;
+  }
+  
+  .semester-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+  }
